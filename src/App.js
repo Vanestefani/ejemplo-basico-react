@@ -14,11 +14,12 @@ function App() {
   return (
     <Router>
   <div className="App">
+    <div id="page-body">
    <Route path='/' component={HomePage} exact></Route>
    <Route path ='/about' component={About}></Route>
    <Route path ='/articulos' component={Articulos}></Route>
    <Route path ='/articulo' component={Articulo}></Route>
-
+   </div>
 
    </div>
     </Router>
