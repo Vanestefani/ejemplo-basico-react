@@ -7,7 +7,7 @@ const Articulos = ()=>(
 <h1>Articulos </h1>  
 {ArticleContent.map(
     (article,key )=>(
-    <Link key ={key} to={`/articulo/${article.name}`}><h3>{article.title}</h3></Link>
+    <Link className="article-list-item" key ={key} to={`/articulo/${article.name}`}><h3>{article.title}</h3></Link>
     )
 )}
     </>
