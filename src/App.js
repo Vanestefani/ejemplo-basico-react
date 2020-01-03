@@ -13,18 +13,18 @@ import Navbar from './navbar';
 function App() {
   return (
     <Router>
-  <div className="App">
-    <div id="page-body">
-      <Navbar></Navbar>
-   <Route path='/' component={HomePage} exact></Route>
-   <Route path ='/about' component={About}></Route>
-   <Route path ='/articulos' component={Articulos}></Route>
-   <Route path ='/articulo:name' component={Articulo}></Route>
-   </div>
+      <div className="App">
+        <div id="page-body">
+          <Navbar></Navbar>
+          <Route path='/' component={HomePage} exact></Route>
+          <Route path='/about' component={About}></Route>
+          <Route path='/articulos' component={Articulos}></Route>
+          <Route path='/articulo/:name' component={Articulo}></Route>
+        </div>
 
-   </div>
+      </div>
     </Router>
-  
+
   );
 }
 

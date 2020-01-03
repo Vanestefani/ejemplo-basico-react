@@ -51,9 +51,8 @@ nav a:hover {
 }
 
 #page-body {
-  max-width: 700px;
-  margin: auto;
-  padding-top: 64px;
+  padding: 5%;
+
 }
 
 .article-list-item {
