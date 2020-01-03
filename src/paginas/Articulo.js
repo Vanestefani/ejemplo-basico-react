@@ -5,6 +5,7 @@ const Articulo = ({match}) =>{
     const name =match.params.name;
    
     const article=ArticleContent.find(article=>(article.name===name));
+    if(!article) return(<h1>Este articulo no existe  </h1>)
     return(
 
 <>
