@@ -6,6 +6,7 @@ const  Navbar = () =>(
 <ul>
     <li><Link to="/">HomePage</Link> </li>
     <li><Link to="/articulo">Articulo</Link> </li>
+    <li><Link to="/articulos">Articulos</Link> </li>
     <li><Link to="/about">About</Link> </li>
 
 
