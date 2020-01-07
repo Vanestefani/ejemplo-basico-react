@@ -1,13 +1,15 @@
 import React from 'react';
 import ArticleContent from './article-content';
 import ListaArticulos from '../Componentes/ListaArticulos';
+import NoFoundPage from '../paginas/NoFoundPage';
+
 const Articulo = ({match}) =>{
     //url guarda el parametro name  en una constante name
     const name =match.params.name;
       //arreglo que guarda la lista de articulos diferentes al
       const otrosarticulos= ArticleContent.filter ((articulos , key)=>(articulos.name !=name));
     const article=ArticleContent.find(article=>(article.name===name));
-    if(!article) return(<h1>Este articulo no existe  </h1>)
+    if(!article) return(<NoFoundPage></NoFoundPage>)
     return(
 
 <>
