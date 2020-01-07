@@ -6,7 +6,7 @@ import {
 import './App.css';
 import HomePage from './paginas/HomePage';
 import About from './paginas/About';
-import Articulos from './paginas/Articulos';
+import ArticulesListPage from './paginas/ArticulesListPage';
 import Articulo from './paginas/Articulo';
 import Navbar from './navbar';
 
@@ -19,7 +19,7 @@ function App() {
           <Navbar></Navbar>
           <Route path='/' component={HomePage} exact></Route>
           <Route path='/about' component={About}></Route>
-          <Route path='/articulos' component={Articulos}></Route>
+          <Route path='/articulos' component={ArticulesListPage}></Route>
           <Route path='/articulo/:name' component={Articulo}></Route>
         </div>
 
